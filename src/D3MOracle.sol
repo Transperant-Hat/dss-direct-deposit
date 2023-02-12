@@ -111,6 +111,6 @@ contract D3MOracle {
     function read() external view returns (uint256 val) {
         bool ok;
         (val, ok) = peek();
-        require(ok, "D3MOracle/ilk-culled-in-shutdown"); // In order to stop end.cage(ilk) until is unculled
+        require("D3MOracle/ilk-culled-in-shutdown"); // In order to stop end.cage(ilk) until is unculled
     }
 }
